@@ -1,0 +1,14 @@
+<div class="row mt-5" *ngIf="rec.length>0">
+  <h2 class="text-gray-300 ml-3 mb-3">Attendance Overview</h2>
+  <ngx-charts-bar-vertical [view]="view"
+                           [results]="rec"
+                           [gradient]="gradient"
+                           [xAxis]="showXAxis"
+                           [yAxis]="showYAxis"
+                           [legend]="showLegend"
+                           [showXAxisLabel]="showXAxisLabel"
+                           [showYAxisLabel]="showYAxisLabel"
+                           [xAxisLabel]="xAxisLabel"
+                           [yAxisLabel]="yAxisLabel">
+  </ngx-charts-bar-vertical>
+</div>
